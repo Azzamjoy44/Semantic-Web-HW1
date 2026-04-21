@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title th:text="${pageTitle != null ? pageTitle + ' | Recipe Recommender' : 'Recipe Recommender'}">Recipe Recommender</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a th:href="@{/}" class="nav-brand">
+            <span class="brand-icon">🍽️</span>
+            <span class="brand-text">RecipeApp</span>
+        </a>
+        <ul class="nav-links">
+            <li><a th:href="@{/}" th:classappend="${#httpServletRequest.requestURI == '/' ? 'active' : ''}">Home</a></li>
+            <li><a th:href="@{/recipes}" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/recipes') and !#strings.contains(#httpServletRequest.requestURI, 'recommend') and !#strings.contains(#httpServletRequest.requestURI, 'filter') and !#strings.contains(#httpServletRequest.requestURI, 'xsl') ? 'active' : ''}">Recipes</a></li>
+            <li><a th:href="@{/recipes/xsl-view}" th:classappend="${#strings.contains(#httpServletRequest.requestURI, 'xsl-view') ? 'active' : ''}">XSL View</a></li>
+            <li class="nav-dropdown">
+                <span class="nav-dropdown-toggle">Recommendations ▾</span>
+                <ul class="nav-dropdown-menu">
+                    <li><a th:href="@{/recipes/recommend/by-skill}">By Skill Level</a></li>
+                    <li><a th:href="@{/recipes/recommend/by-skill-cuisine}">By Skill + Cuisine</a></li>
+                </ul>
+            </li>
+            <li><a th:href="@{/recipes/filter/by-cuisine}" th:classappend="${#strings.contains(#httpServletRequest.requestURI, 'by-cuisine') ? 'active' : ''}">Filter by Cuisine</a></li>
+            <li><a th:href="@{/recipes/add}" th:classappend="${#strings.contains(#httpServletRequest.requestURI, '/add') and #strings.contains(#httpServletRequest.requestURI, 'recipes') ? 'active' : ''}">Add Recipe</a></li>
+            <li><a th:href="@{/users/add}" th:classappend="${#strings.contains(#httpServletRequest.requestURI, 'users') ? 'active' : ''}">Add User</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="main-content">
+    <div th:if="${successMessage}" class="alert alert-success">
+        <span class="alert-icon">✓</span>
+        <span th:text="${successMessage}"></span>
+    </div>
+    <div th:if="${errorMessage}" class="alert alert-error">
+        <span class="alert-icon">✗</span>
+        <span th:text="${errorMessage}"></span>
+    </div>
+
+    <th:block th:fragment="content">
+        <!-- Child content goes here -->
+    </th:block>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>Recipe Recommender &copy; 2025 &mdash; Web &amp; Semantic Web Applications, UPB-FILS</p>
+        <p>ZAFAR Azzam &amp; ALKHALIDY Essam</p>
+    </div>
+</footer>
+
+<script>
+    // Dropdown toggle
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            this.parentElement.classList.toggle('open');
+        });
+    });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-dropdown')) {
+            document.querySelectorAll('.nav-dropdown').forEach(function(d) {
+                d.classList.remove('open');
+            });
+        }
+    });
+</script>
+</body>
+</html>

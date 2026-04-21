@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root element -->
+    <xs:element name="users">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="user" type="UserType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- User type -->
+    <xs:complexType name="UserType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="surname" type="xs:string"/>
+            <xs:element name="cookingSkillLevel" type="DifficultyLevel"/>
+            <xs:element name="preferredCuisine" type="CuisineType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <!-- Difficulty level enumeration -->
+    <xs:simpleType name="DifficultyLevel">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Beginner"/>
+            <xs:enumeration value="Intermediate"/>
+            <xs:enumeration value="Advanced"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Cuisine type enumeration -->
+    <xs:simpleType name="CuisineType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Italian"/>
+            <xs:enumeration value="French"/>
+            <xs:enumeration value="Indian"/>
+            <xs:enumeration value="Chinese"/>
+            <xs:enumeration value="Japanese"/>
+            <xs:enumeration value="Thai"/>
+            <xs:enumeration value="Spanish"/>
+            <xs:enumeration value="Greek"/>
+            <xs:enumeration value="Mediterranean"/>
+            <xs:enumeration value="Mexican"/>
+            <xs:enumeration value="American"/>
+            <xs:enumeration value="British"/>
+            <xs:enumeration value="European"/>
+            <xs:enumeration value="African"/>
+            <xs:enumeration value="Asian"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

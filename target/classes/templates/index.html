@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Recipe Recommender</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a th:href="@{/}" class="nav-brand">
+            <span class="brand-icon">🍽️</span>
+            <span class="brand-text">RecipeApp</span>
+        </a>
+        <ul class="nav-links">
+            <li><a th:href="@{/}" class="active">Home</a></li>
+            <li><a th:href="@{/recipes}">Recipes</a></li>
+            <li><a th:href="@{/recipes/xsl-view}">XSL View</a></li>
+            <li><a th:href="@{/recipes/recommend/by-skill}">By Skill</a></li>
+            <li><a th:href="@{/recipes/recommend/by-skill-cuisine}">By Skill+Cuisine</a></li>
+            <li><a th:href="@{/recipes/filter/by-cuisine}">Filter Cuisine</a></li>
+            <li><a th:href="@{/recipes/add}">Add Recipe</a></li>
+            <li><a th:href="@{/users/add}">Add User</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="main-content">
+    <div th:if="${successMessage}" class="alert alert-success">
+        <span class="alert-icon">✓</span> <span th:text="${successMessage}"></span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Perfect Recipe</h1>
+            <p class="hero-subtitle">Personalised recipe recommendations based on your cooking skill and cuisine preferences.</p>
+            <div class="hero-actions">
+                <a th:href="@{/recipes}" class="btn btn-primary btn-lg">Browse All Recipes</a>
+                <a th:href="@{/recipes/recommend/by-skill}" class="btn btn-outline btn-lg">Get Recommendations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active User Banner -->
+    <section class="user-banner" th:if="${hasUser}">
+        <div class="container">
+            <div class="user-card">
+                <div class="user-avatar">
+                    <span th:text="${activeUser.name.substring(0,1).toUpperCase()}">A</span>
+                </div>
+                <div class="user-info">
+                    <p class="user-greeting">Welcome back!</p>
+                    <h2 class="user-name" th:text="${activeUser.fullName}">Azzam Zafar</h2>
+                    <div class="user-tags">
+                        <span class="tag tag-skill" th:text="'Skill: ' + ${activeUser.cookingSkillLevel}">Skill: Intermediate</span>
+                        <span class="tag tag-cuisine" th:text="'Cuisine: ' + ${activeUser.preferredCuisine}">Cuisine: Italian</span>
+                    </div>
+                </div>
+                <div class="user-quick-actions">
+                    <a th:href="@{/recipes/recommend/by-skill}" class="btn btn-sm btn-primary">My Recommendations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="user-banner user-banner-empty" th:unless="${hasUser}">
+        <div class="container">
+            <p>No user profile found. <a th:href="@{/users/add}">Add your profile</a> to get personalised recommendations.</p>
+        </div>
+    </div>
+
+    <!-- Feature Cards -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">What You Can Do</h2>
+            <div class="feature-grid">
+
+                <a th:href="@{/recipes}" class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>All Recipes</h3>
+                    <p>Browse all 22 recipes in our collection. View titles, cuisines, and difficulty levels.</p>
+                </a>
+
+                <a th:href="@{/recipes/xsl-view}" class="feature-card feature-card-highlight">
+                    <div class="feature-icon">🎨</div>
+                    <h3>XSL View</h3>
+                    <p>View recipes rendered with XSLT. Recipes matching your skill level are highlighted yellow, others green.</p>
+                </a>
+
+                <a th:href="@{/recipes/recommend/by-skill}" class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Recommend by Skill</h3>
+                    <p>Get recipes recommended for your cooking skill level using XPath queries.</p>
+                </a>
+
+                <a th:href="@{/recipes/recommend/by-skill-cuisine}" class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Skill + Cuisine</h3>
+                    <p>Narrow down recommendations to your preferred cuisine style and skill level.</p>
+                </a>
+
+                <a th:href="@{/recipes/filter/by-cuisine}" class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Filter by Cuisine</h3>
+                    <p>Select any cuisine type from the list and see all matching recipes instantly.</p>
+                </a>
+
+                <a th:href="@{/recipes/add}" class="feature-card">
+                    <div class="feature-icon">➕</div>
+                    <h3>Add Recipe</h3>
+                    <p>Submit a new recipe with title, cuisine types, difficulty level, and timing.</p>
+                </a>
+
+                <a th:href="@{/users/add}" class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>Add User</h3>
+                    <p>Create a new user profile with skill level and preferred cuisine to personalise recommendations.</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>Recipe Recommender &copy; 2025 &mdash; Web &amp; Semantic Web Applications, UPB-FILS</p>
+        <p>ZAFAR Azzam &amp; ALKHALIDY Essam</p>
+    </div>
+</footer>
+</body>
+</html>

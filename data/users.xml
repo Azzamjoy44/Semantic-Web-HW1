@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="users.xsd">
+                        
+    
+    
+    
+    
+    <user id="u001">
+                                                
+        
+        
+        
+        
+        <name>Azzam</name>
+                                                
+        
+        
+        
+        
+        <surname>Zafar</surname>
+                                                
+        
+        
+        
+        
+        <cookingSkillLevel>Intermediate</cookingSkillLevel>
+                                                
+        
+        
+        
+        
+        <preferredCuisine>Italian</preferredCuisine>
+                                            
+    
+    
+    
+    
+    </user>
+                    
+    
+    
+    
+    
+    <user id="u002">
+                                        
+        
+        
+        
+        <name>Essam</name>
+                                        
+        
+        
+        
+        <surname>Alkhalidy</surname>
+                                        
+        
+        
+        
+        <cookingSkillLevel>Advanced</cookingSkillLevel>
+                                        
+        
+        
+        
+        <preferredCuisine>French</preferredCuisine>
+                                    
+    
+    
+    
+    </user>
+                
+    
+    
+    
+    <user id="u003">
+                                
+        
+        
+        <name>Mohamad-Mario</name>
+                                
+        
+        
+        <surname>Sakka</surname>
+                                
+        
+        
+        <cookingSkillLevel>Beginner</cookingSkillLevel>
+                                
+        
+        
+        <preferredCuisine>Asian</preferredCuisine>
+                            
+    
+    
+    </user>
+            
+    
+    
+    <user id="u004">
+                        
+        
+        <name>Mahmoud Mirghani Mahmoud</name>
+                        
+        
+        <surname>Abdelrahman</surname>
+                        
+        
+        <cookingSkillLevel>Advanced</cookingSkillLevel>
+                        
+        
+        <preferredCuisine>African</preferredCuisine>
+                    
+    
+    </user>
+        
+    
+    <user id="u005">
+                
+        <name>John</name>
+                
+        <surname>Doe</surname>
+                
+        <cookingSkillLevel>Intermediate</cookingSkillLevel>
+                
+        <preferredCuisine>American</preferredCuisine>
+            
+    </user>
+    
+    <user id="u006">
+        <name>Jane</name>
+        <surname>Doe</surname>
+        <cookingSkillLevel>Beginner</cookingSkillLevel>
+        <preferredCuisine>European</preferredCuisine>
+    </user>
+</users>

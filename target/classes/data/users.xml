@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="users.xsd">
+
+    <user id="u001">
+        <name>Azzam</name>
+        <surname>Zafar</surname>
+        <cookingSkillLevel>Intermediate</cookingSkillLevel>
+        <preferredCuisine>Italian</preferredCuisine>
+    </user>
+
+</users>

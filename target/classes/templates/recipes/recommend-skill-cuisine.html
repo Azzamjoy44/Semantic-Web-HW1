@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Skill + Cuisine Recommendations | Recipe Recommender</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<nav th:replace="~{fragments/navbar :: navbar}"></nav>
+
+<main class="main-content">
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">🌍 Recommendations by Skill + Cuisine</h1>
+            <p class="page-subtitle">Recipes matching both the selected user's cooking skill level and preferred cuisine type.</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="alert alert-error" th:if="${errorMessage != null}">
+            <span th:text="${errorMessage}">Error</span>
+        </div>
+
+        <!-- User selector -->
+        <div class="user-selector-box">
+            <h3>Select User</h3>
+            <form th:action="@{/recipes/recommend/by-skill-cuisine}" method="get" class="inline-form">
+                <select name="userId" class="form-select">
+                    <option value="">— Use first user —</option>
+                    <option th:each="u : ${allUsers}"
+                            th:value="${u.id}"
+                            th:text="${u.fullName + ' (' + u.cookingSkillLevel + ', ' + u.preferredCuisine + ')'}"
+                            th:selected="${u.id == selectedUserId}">User</option>
+                </select>
+                <button type="submit" class="btn btn-primary btn-sm">Apply</button>
+            </form>
+        </div>
+
+        <div th:if="${user != null}">
+            <div class="user-info-banner">
+                <div class="user-avatar sm">
+                    <span th:text="${user.name.substring(0,1).toUpperCase()}">A</span>
+                </div>
+                <div>
+                    <p>Recommending for: <strong th:text="${user.fullName}">Azzam Zafar</strong></p>
+                    <div class="user-tags">
+                        <span class="tag tag-skill" th:text="'Skill: ' + ${user.cookingSkillLevel}">Skill</span>
+                        <span class="tag tag-cuisine" th:text="'Cuisine: ' + ${user.preferredCuisine}">Cuisine</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-subtitle" th:text="'Found ' + ${#lists.size(recipes)} + ' matching recipes'">Results</h2>
+
+            <div class="recipe-grid" th:if="${!#lists.isEmpty(recipes)}">
+                <div class="recipe-card skill-match" th:each="recipe : ${recipes}">
+                    <div class="recipe-card-header">
+                        <h3 class="recipe-title" th:text="${recipe.title}">Title</h3>
+                        <span class="difficulty-badge"
+                              th:classappend="${recipe.primaryDifficulty == 'Beginner' ? ' beginner' : (recipe.primaryDifficulty == 'Intermediate' ? ' intermediate' : ' advanced')}"
+                              th:text="${recipe.primaryDifficulty}">Difficulty</span>
+                    </div>
+                    <div class="recipe-card-body">
+                        <p class="recipe-description" th:text="${recipe.description}">Description</p>
+                        <div class="recipe-meta">
+                            <span class="meta-item">
+                                <span class="meta-label">Cuisines:</span>
+                                <span th:text="${recipe.cuisinesDisplay}">Italian, French</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="recipe-card-footer">
+                        <a th:href="@{/recipes/{id}(id=${recipe.id})}" class="btn btn-outline btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty-state" th:if="${#lists.isEmpty(recipes)}">
+                <p>No recipes found matching both <strong th:text="${user.cookingSkillLevel}"></strong> skill and <strong th:text="${user.preferredCuisine}"></strong> cuisine.</p>
+                <p>Try <a th:href="@{/recipes/recommend/by-skill}">recommendations by skill only</a> for more results.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="~{fragments/navbar :: footer}"></footer>
+</body>
+</html>

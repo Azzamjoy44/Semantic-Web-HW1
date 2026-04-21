@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<recipes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipes.xsd">
+            
+    
+    <recipe id="r001">
+                        
+        
+        <title>Spaghetti Carbonara</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Italian</cuisine>
+                                    
+            
+            <cuisine>Mediterranean</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Intermediate</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Classic Roman pasta dish with eggs, cheese, pancetta and black pepper.</description>
+                        
+        
+        <prepTime>15</prepTime>
+                        
+        
+        <cookTime>20</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r002">
+                        
+        
+        <title>Chicken Tikka Masala</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Indian</cuisine>
+                                    
+            
+            <cuisine>Asian</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Intermediate</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Tender chicken in a spiced tomato and cream sauce.</description>
+                        
+        
+        <prepTime>20</prepTime>
+                        
+        
+        <cookTime>35</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r003">
+                        
+        
+        <title>Beef Bourguignon</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>French</cuisine>
+                                    
+            
+            <cuisine>European</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Advanced</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Slow-cooked beef stew braised in red wine with vegetables.</description>
+                        
+        
+        <prepTime>30</prepTime>
+                        
+        
+        <cookTime>180</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r004">
+                        
+        
+        <title>Greek Salad</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Greek</cuisine>
+                                    
+            
+            <cuisine>Mediterranean</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Fresh salad with tomatoes, cucumber, olives, and feta cheese.</description>
+                        
+        
+        <prepTime>10</prepTime>
+                        
+        
+        <cookTime>0</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r005">
+                        
+        
+        <title>Pad Thai</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Thai</cuisine>
+                                    
+            
+            <cuisine>Asian</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Intermediate</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Stir-fried rice noodles with eggs, tofu, shrimp and peanuts.</description>
+                        
+        
+        <prepTime>20</prepTime>
+                        
+        
+        <cookTime>15</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r006">
+                        
+        
+        <title>Mushroom Risotto</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Italian</cuisine>
+                                    
+            
+            <cuisine>European</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Intermediate</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Creamy Arborio rice with mixed mushrooms, parmesan and white wine.</description>
+                        
+        
+        <prepTime>10</prepTime>
+                        
+        
+        <cookTime>30</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r007">
+                        
+        
+        <title>Fish and Chips</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>British</cuisine>
+                                    
+            
+            <cuisine>European</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Battered cod with crispy fried potatoes and mushy peas.</description>
+                        
+        
+        <prepTime>15</prepTime>
+                        
+        
+        <cookTime>25</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r008">
+                        
+        
+        <title>Moroccan Lamb Tagine</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>African</cuisine>
+                                    
+            
+            <cuisine>Mediterranean</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Advanced</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Slow-braised lamb with apricots, almonds and aromatic spices.</description>
+                        
+        
+        <prepTime>25</prepTime>
+                        
+        
+        <cookTime>150</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r009">
+                        
+        
+        <title>Avocado Toast</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>American</cuisine>
+                                    
+            
+            <cuisine>Mediterranean</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Toasted sourdough topped with smashed avocado, poached egg and chili flakes.</description>
+                        
+        
+        <prepTime>5</prepTime>
+                        
+        
+        <cookTime>5</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r010">
+                        
+        
+        <title>Peking Duck</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Chinese</cuisine>
+                                    
+            
+            <cuisine>Asian</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Advanced</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Crispy-skinned duck served with pancakes, hoisin sauce and spring onions.</description>
+                        
+        
+        <prepTime>60</prepTime>
+                        
+        
+        <cookTime>120</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r011">
+                        
+        
+        <title>Vegetable Curry</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Indian</cuisine>
+                                    
+            
+            <cuisine>Asian</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Mixed vegetables in a fragrant coconut milk and spice sauce.</description>
+                        
+        
+        <prepTime>15</prepTime>
+                        
+        
+        <cookTime>25</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r012">
+                        
+        
+        <title>Beef Tacos</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Mexican</cuisine>
+                                    
+            
+            <cuisine>American</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Seasoned ground beef in crispy shells with salsa, cheese and sour cream.</description>
+                        
+        
+        <prepTime>10</prepTime>
+                        
+        
+        <cookTime>15</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r013">
+                        
+        
+        <title>French Onion Soup</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>French</cuisine>
+                                    
+            
+            <cuisine>European</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Intermediate</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Caramelized onion broth topped with crusty bread and melted Gruyère.</description>
+                        
+        
+        <prepTime>15</prepTime>
+                        
+        
+        <cookTime>60</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r014">
+                        
+        
+        <title>Sushi Rolls</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Japanese</cuisine>
+                                    
+            
+            <cuisine>Asian</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Advanced</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Hand-rolled sushi with salmon, avocado and cucumber in nori sheets.</description>
+                        
+        
+        <prepTime>45</prepTime>
+                        
+        
+        <cookTime>30</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r015">
+                        
+        
+        <title>Shakshuka</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>African</cuisine>
+                                    
+            
+            <cuisine>Mediterranean</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Poached eggs in a spiced tomato and pepper sauce, served with crusty bread.</description>
+                        
+        
+        <prepTime>10</prepTime>
+                        
+        
+        <cookTime>20</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r016">
+                        
+        
+        <title>Coq au Vin</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>French</cuisine>
+                                    
+            
+            <cuisine>European</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Advanced</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Chicken braised in red wine with mushrooms, pearl onions and lardons.</description>
+                        
+        
+        <prepTime>30</prepTime>
+                        
+        
+        <cookTime>90</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r017">
+                        
+        
+        <title>Gazpacho</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Spanish</cuisine>
+                                    
+            
+            <cuisine>Mediterranean</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Chilled raw tomato-based soup from Andalusia with vegetables.</description>
+                        
+        
+        <prepTime>15</prepTime>
+                        
+        
+        <cookTime>0</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r018">
+                        
+        
+        <title>Miso Ramen</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Japanese</cuisine>
+                                    
+            
+            <cuisine>Asian</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Intermediate</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Rich miso broth with wheat noodles, soft-boiled egg, pork and bamboo shoots.</description>
+                        
+        
+        <prepTime>20</prepTime>
+                        
+        
+        <cookTime>40</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r019">
+                        
+        
+        <title>Paella Valenciana</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Spanish</cuisine>
+                                    
+            
+            <cuisine>Mediterranean</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Advanced</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Advanced</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Beginner</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Saffron rice with rabbit, chicken, green beans and artichokes.</description>
+                        
+        
+        <prepTime>30</prepTime>
+                        
+        
+        <cookTime>45</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r020">
+                        
+        
+        <title>Pumpkin Soup</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>British</cuisine>
+                                    
+            
+            <cuisine>European</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Velvety roasted pumpkin soup with ginger, coconut milk and toasted seeds.</description>
+                        
+        
+        <prepTime>15</prepTime>
+                        
+        
+        <cookTime>40</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r021">
+                        
+        
+        <title>Butter Chicken</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>Indian</cuisine>
+                                    
+            
+            <cuisine>Asian</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Intermediate</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Marinated chicken in a rich, buttery tomato and cream sauce.</description>
+                        
+        
+        <prepTime>20</prepTime>
+                        
+        
+        <cookTime>30</cookTime>
+                    
+    
+    </recipe>
+            
+    
+    <recipe id="r022">
+                        
+        
+        <title>Caesar Salad</title>
+                        
+        
+        <cuisines>
+                                    
+            
+            <cuisine>American</cuisine>
+                                    
+            
+            <cuisine>Mediterranean</cuisine>
+                                
+        
+        </cuisines>
+                        
+        
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                        
+        
+        <supportedLevels>
+                                    
+            
+            <level>Beginner</level>
+                                    
+            
+            <level>Intermediate</level>
+                                    
+            
+            <level>Advanced</level>
+                                
+        
+        </supportedLevels>
+                        
+        
+        <description>Romaine lettuce with Caesar dressing, croutons and Parmesan shavings.</description>
+                        
+        
+        <prepTime>10</prepTime>
+                        
+        
+        <cookTime>0</cookTime>
+                    
+    
+    </recipe>
+        
+    
+    <recipe id="r023">
+                
+        <title>Test Pasta</title>
+                
+        <cuisines>
+                        
+            <cuisine>Italian</cuisine>
+                        
+            <cuisine>Mediterranean</cuisine>
+                    
+        </cuisines>
+                
+        <primaryDifficulty>Beginner</primaryDifficulty>
+                
+        <supportedLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </supportedLevels>
+                
+        <description>A test recipe</description>
+                
+        <prepTime>10</prepTime>
+                
+        <cookTime>20</cookTime>
+            
+    </recipe>
+    
+    <recipe id="r024">
+        <title>Biryani</title>
+        <cuisines>
+            <cuisine>Asian</cuisine>
+            <cuisine>African</cuisine>
+        </cuisines>
+        <primaryDifficulty>Advanced</primaryDifficulty>
+        <supportedLevels>
+            <level>Beginner</level>
+            <level>Intermediate</level>
+            <level>Advanced</level>
+        </supportedLevels>
+        <description>A fragrant, spiced rice dish layered with marinated meat or vegetables, cooked together for rich flavor and aroma</description>
+        <prepTime>20</prepTime>
+        <cookTime>58</cookTime>
+    </recipe>
+</recipes>
