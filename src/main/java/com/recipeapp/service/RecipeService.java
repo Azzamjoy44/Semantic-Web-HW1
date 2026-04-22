@@ -78,14 +78,7 @@ public class RecipeService {
             cuisines.add(cuisineNodes.item(i).getTextContent().trim());
         }
 
-        // Supported levels
-        List<String> levels = new ArrayList<>();
-        NodeList levelNodes = el.getElementsByTagName("level");
-        for (int i = 0; i < levelNodes.getLength(); i++) {
-            levels.add(levelNodes.item(i).getTextContent().trim());
-        }
-
-        return new Recipe(id, title, cuisines, primaryDifficulty, levels, description, prepTime, cookTime);
+        return new Recipe(id, title, cuisines, primaryDifficulty, description, prepTime, cookTime);
     }
 
     // ─── Public API ──────────────────────────────────────────────────────────────
@@ -170,13 +163,6 @@ public class RecipeService {
         recipeEl.appendChild(cuisinesEl);
 
         appendText(doc, recipeEl, "primaryDifficulty", recipe.getPrimaryDifficulty());
-
-        Element levelsEl = doc.createElement("supportedLevels");
-        for (String lvl : recipe.getSupportedLevels()) {
-            appendText(doc, levelsEl, "level", lvl);
-        }
-        recipeEl.appendChild(levelsEl);
-
         appendText(doc, recipeEl, "description", recipe.getDescription());
         appendText(doc, recipeEl, "prepTime", String.valueOf(recipe.getPrepTime()));
         appendText(doc, recipeEl, "cookTime", String.valueOf(recipe.getCookTime()));

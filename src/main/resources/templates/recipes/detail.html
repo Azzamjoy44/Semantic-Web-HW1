@@ -59,16 +59,9 @@
                     </div>
 
                     <div class="detail-info-block">
-                        <h3>Difficulty Levels</h3>
-                        <p class="info-note">This recipe supports all three skill levels:</p>
-                        <div class="level-tags">
-                            <span th:each="level : ${recipe.supportedLevels}"
-                                  class="level-badge large"
-                                  th:classappend="${level == 'Beginner' ? ' beginner' : (level == 'Intermediate' ? ' intermediate' : ' advanced')}"
-                                  th:text="${level}">Level</span>
-                        </div>
-                        <p class="info-note mt-sm">
-                            Primary difficulty (used for recommendations):
+                        <h3>Difficulty Level</h3>
+                        <p class="info-note">
+                            Primary difficulty:
                             <strong th:text="${recipe.primaryDifficulty}">Intermediate</strong>
                         </p>
                     </div>

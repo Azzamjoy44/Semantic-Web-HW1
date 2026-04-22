@@ -51,13 +51,7 @@
                             <span th:text="${recipe.totalTime} + ' min'">0 min</span>
                         </span>
                     </div>
-                    <div class="supported-levels">
-                        <span class="meta-label">Suitable for:</span>
-                        <span th:each="level : ${recipe.supportedLevels}"
-                              class="level-badge"
-                              th:classappend="${level == 'Beginner' ? ' beginner' : (level == 'Intermediate' ? ' intermediate' : ' advanced')}"
-                              th:text="${level}">Level</span>
-                    </div>
+
                 </div>
                 <div class="recipe-card-footer">
                     <a th:href="@{/recipes/{id}(id=${recipe.id})}" class="btn btn-outline btn-sm">View Details</a>

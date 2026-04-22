@@ -16,7 +16,6 @@
             <xs:element name="title" type="xs:string"/>
             <xs:element name="cuisines" type="CuisinesType"/>
             <xs:element name="primaryDifficulty" type="DifficultyLevel"/>
-            <xs:element name="supportedLevels" type="SupportedLevelsType"/>
             <xs:element name="description" type="xs:string"/>
             <xs:element name="prepTime" type="xs:nonNegativeInteger"/>
             <xs:element name="cookTime" type="xs:nonNegativeInteger"/>
@@ -28,13 +27,6 @@
     <xs:complexType name="CuisinesType">
         <xs:sequence>
             <xs:element name="cuisine" type="CuisineType" minOccurs="2" maxOccurs="2"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <!-- Supported levels type: exactly 3 level elements -->
-    <xs:complexType name="SupportedLevelsType">
-        <xs:sequence>
-            <xs:element name="level" type="DifficultyLevel" minOccurs="3" maxOccurs="3"/>
         </xs:sequence>
     </xs:complexType>
 

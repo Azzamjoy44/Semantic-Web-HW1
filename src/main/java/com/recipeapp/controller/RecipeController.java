@@ -133,15 +133,11 @@ public class RecipeController {
             return "recipes/add";
         }
 
-        // All 3 difficulty levels included as supported (assignment requirement: 3 levels per recipe)
-        List<String> supportedLevels = new ArrayList<>(AppConstants.DIFFICULTY_LEVELS);
-
         Recipe recipe = new Recipe(
             null,
             title.trim(),
             List.of(cuisine1, cuisine2),
             primaryDifficulty,
-            supportedLevels,
             description.trim(),
             prepTime,
             cookTime

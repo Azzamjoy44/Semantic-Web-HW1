@@ -54,21 +54,7 @@
                         <strong>Cook:</strong> <xsl:value-of select="cookTime"/> min
                     </span>
                 </div>
-                <div class="supported-levels">
-                    <strong>Suitable for:</strong>
-                    <xsl:for-each select="supportedLevels/level">
-                        <span class="level-badge">
-                            <xsl:attribute name="class">
-                                <xsl:choose>
-                                    <xsl:when test=". = 'Beginner'">level-badge beginner</xsl:when>
-                                    <xsl:when test=". = 'Intermediate'">level-badge intermediate</xsl:when>
-                                    <xsl:otherwise>level-badge advanced</xsl:otherwise>
-                                </xsl:choose>
-                            </xsl:attribute>
-                            <xsl:value-of select="."/>
-                        </span>
-                    </xsl:for-each>
-                </div>
+
                 <div class="recipe-actions">
                     <a href="/recipes/{@id}" class="btn-details">View Details</a>
                 </div>

@@ -5,9 +5,8 @@ import java.util.List;
 public class Recipe {
     private String id;
     private String title;
-    private List<String> cuisines;        // exactly 2
+    private List<String> cuisines;
     private String primaryDifficulty;
-    private List<String> supportedLevels; // exactly 3
     private String description;
     private int prepTime;
     private int cookTime;
@@ -15,12 +14,11 @@ public class Recipe {
     public Recipe() {}
 
     public Recipe(String id, String title, List<String> cuisines, String primaryDifficulty,
-                  List<String> supportedLevels, String description, int prepTime, int cookTime) {
+                  String description, int prepTime, int cookTime) {
         this.id = id;
         this.title = title;
         this.cuisines = cuisines;
         this.primaryDifficulty = primaryDifficulty;
-        this.supportedLevels = supportedLevels;
         this.description = description;
         this.prepTime = prepTime;
         this.cookTime = cookTime;
@@ -38,9 +36,6 @@ public class Recipe {
     public String getPrimaryDifficulty() { return primaryDifficulty; }
     public void setPrimaryDifficulty(String primaryDifficulty) { this.primaryDifficulty = primaryDifficulty; }
 
-    public List<String> getSupportedLevels() { return supportedLevels; }
-    public void setSupportedLevels(List<String> supportedLevels) { this.supportedLevels = supportedLevels; }
-
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
@@ -54,9 +49,5 @@ public class Recipe {
 
     public String getCuisinesDisplay() {
         return cuisines != null ? String.join(", ", cuisines) : "";
-    }
-
-    public String getSupportedLevelsDisplay() {
-        return supportedLevels != null ? String.join(", ", supportedLevels) : "";
     }
 }
