@@ -8,8 +8,8 @@ A Java web application for recipe recommendation, built for the First Homework f
 
 | Member | Contribution |
 |--------|-------------|
-| **ZAFAR Azzam** | Project architecture, Maven/Spring Boot setup, Java models, services and controllers, XML/XSD data files, XPath queries, README, .gitignore |
-| **ALKHALIDY Essam** | All Thymeleaf HTML templates (pages and fragments), CSS styling and UI design, application configuration, application configuration, XSL/XSLT transformation |
+| **ZAFAR Azzam** | Project architecture, Maven/Spring Boot setup, Java models, services and controllers, XPath queries, README, .gitignore |
+| **ALKHALIDY Essam** | All Thymeleaf HTML templates (pages and fragments), CSS styling and UI design, XML/XSD data files, XSL/XSLT transformation |
 
 > 📌 **Public GitHub Repository:** [https://github.com/Azzamjoy44/Semantic-Web-HW1](https://github.com/Azzamjoy44/Semantic-Web-HW1)
 
