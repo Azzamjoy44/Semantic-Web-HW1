@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Filter by Cuisine | Recipe Recommender</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<nav th:replace="~{fragments/navbar :: navbar}"></nav>
+
+<main class="main-content">
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">🔍 Filter by Cuisine Type</h1>
+            <p class="page-subtitle">Select a cuisine to see all matching recipes (uses XPath query).</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Cuisine selector form -->
+        <div class="form-card filter-form-card">
+            <form th:action="@{/recipes/filter/by-cuisine}" method="get" class="inline-form">
+                <select name="cuisine" class="form-select form-select-lg" required>
+                    <option value="">— Select a Cuisine Type —</option>
+                    <option th:each="c : ${cuisineTypes}"
+                            th:value="${c}"
+                            th:text="${c}"
+                            th:selected="${c == selectedCuisine}">Italian</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+
+        <!-- Results -->
+        <div th:if="${recipes != null}">
+            <h2 class="section-subtitle"
+                th:text="'Found ' + ${#lists.size(recipes)} + ' recipes for cuisine: ' + ${selectedCuisine}">Results</h2>
+
+            <div class="recipe-grid" th:if="${!#lists.isEmpty(recipes)}">
+                <div class="recipe-card" th:each="recipe : ${recipes}">
+                    <div class="recipe-card-header">
+                        <h3 class="recipe-title" th:text="${recipe.title}">Title</h3>
+                        <span class="difficulty-badge"
+                              th:classappend="${recipe.primaryDifficulty == 'Beginner' ? ' beginner' : (recipe.primaryDifficulty == 'Intermediate' ? ' intermediate' : ' advanced')}"
+                              th:text="${recipe.primaryDifficulty}">Difficulty</span>
+                    </div>
+                    <div class="recipe-card-body">
+                        <p class="recipe-description" th:text="${recipe.description}">Description</p>
+                        <div class="recipe-meta">
+                            <span class="meta-item">
+                                <span class="meta-label">Cuisines:</span>
+                                <span th:text="${recipe.cuisinesDisplay}">Italian, French</span>
+                            </span>
+                            <span class="meta-item">
+                                <span class="meta-label">Total time:</span>
+                                <span th:text="${recipe.totalTime} + ' min'">0 min</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="recipe-card-footer">
+                        <a th:href="@{/recipes/{id}(id=${recipe.id})}" class="btn btn-outline btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty-state" th:if="${#lists.isEmpty(recipes)}">
+                <p>No recipes found for cuisine type <strong th:text="${selectedCuisine}"></strong>.</p>
+            </div>
+        </div>
+
+        <!-- Cuisine quick-select grid (shown when no selection yet) -->
+        <div th:if="${selectedCuisine == null}">
+            <h2 class="section-subtitle">Or click a cuisine to filter:</h2>
+            <div class="cuisine-quick-grid">
+                <a th:each="c : ${cuisineTypes}"
+                   th:href="@{/recipes/filter/by-cuisine(cuisine=${c})}"
+                   class="cuisine-quick-btn"
+                   th:text="${c}">Italian</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="~{fragments/navbar :: footer}"></footer>
+</body>
+</html>
