@@ -1,6 +1,6 @@
 # Recipe Recommender
 
-A Java web application for recipe recommendation, built as part of the **Web and Semantic Web Application Development** course at **UPB-FILS**, Year 4, Semester 2.
+A Java web application for recipe recommendation, built for the First Homework for The **Web and Semantic Web Application Development** course at **UPB-FILS**, Year 4, Semester 2.
 
 ---
 
